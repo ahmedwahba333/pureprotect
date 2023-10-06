@@ -4,17 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="description">
+    <meta content="We are not just a disinfection company; we embody dedicated care for your health. Based in Arizona,
+    we pride ourselves on delivering high-level disinfection services. Our success hinges on the
+    state-of-the-art medical device, accredited by the FDA. Your health and safety are our top
+    priorities, and we look forward to providing thoroughly sanitized environments in your homes,
+    offices, and public spaces. Additionally, we offer specialized disinfection services for medical
+    clinics, restaurants, and even your vehicles, ensuring fully clean and safe spaces." name="description">
     <meta content="pure protect" name="keywords">
     <meta content="pure protect" name="author">
     <!-- bootstrap -->
-    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- aos -->
-    <!-- <link rel="stylesheet" href="./assets/css/aos.css"> -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- owl carousel -->
-    <!-- <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./assets/css/all.min.css"> -->
+    <!-- aos -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/imgs/logo.jpeg">
 
@@ -288,26 +293,6 @@
                             placeholder="Message"></textarea>
                         <button class="btn btn-primary mt-3" onclick="sendEmail()">Send Message</button>
                     </div>
-                    <script>
-                        function sendEmail() {
-                            // Get the subject and message values from the input fields.
-                            var subject = document.getElementById("exampleFormControlInputSub").value;
-                            var myName = document.getElementById("exampleFormControlInputName").value;
-                            var message = document.getElementById("exampleFormControlTextarea1").value;
-
-                            // Validate the subject and message values.
-                            if (subject === "" || message === "" || myName === "") {
-                                alert("Please enter all fields of the form.");
-                                return;
-                            }
-
-                            // Generate the mailto link.
-                            var mailtoLink = "mailto:Info@pureprotectaz.com?subject=" + subject + "&body=Hello iam " + myName + " and i want to say " + message;
-
-                            // Open the mailto link in the user's email client.
-                            window.location.href = mailtoLink;
-                        }
-                    </script>
                 </div>
             </div>
         </div>
@@ -349,20 +334,40 @@
     <!-- start of script -->
     <!-- jquery -->
     <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- counterup & waypoint -->
     <script src="./assets/js/waypoint.js"></script>
     <script src="./assets/js/jquery.counterup.min.js"></script>
+    <!-- owl carousel -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
     <!-- aos -->
     <script src="./assets/js/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <!-- owl carousel -->
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <!-- bootstrap -->
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
     <!-- jquery logic -->
     <script>
+        function sendEmail() {
+            // Get the subject and message values from the input fields.
+            var subject = document.getElementById("exampleFormControlInputSub").value;
+            var myName = document.getElementById("exampleFormControlInputName").value;
+            var message = document.getElementById("exampleFormControlTextarea1").value;
+
+            // Validate the subject and message values.
+            if (subject === "" || message === "" || myName === "") {
+                alert("Please enter all fields of the form.");
+                return;
+            }
+
+            // Generate the mailto link.
+            var mailtoLink = "mailto:Info@pureprotectaz.com?subject=" + subject + "&body=Hello iam " + myName + " and i want to say " + message;
+
+            // Open the mailto link in the user's email client.
+            window.location.href = mailtoLink;
+        }
         jQuery(document).ready(function ($) {
             $('.counter').counterUp({
                 delay: 10,
