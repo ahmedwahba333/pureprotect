@@ -1,3 +1,9 @@
+@import url('./all.min.css');
+@import url('./aos.css');
+@import url('./bootstrap.min.css');
+@import url('./owl.carousel.min.css');
+@import url('./owl.theme.default.min.css');
+
 .panner-owl {
     position: absolute;
     top: 0;
