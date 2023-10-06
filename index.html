@@ -17,8 +17,6 @@
     <!-- owl carousel -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
-    <!-- aos -->
-    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/imgs/logo.jpeg">
@@ -78,7 +76,7 @@
     </div>
 
     <!-- start of science -->
-    <div class="container my-5 whous shadow p-4" id="whousId" data-aos="flip-left" data-aos-duration="1500" id="about">
+    <div class="container my-5 whous shadow p-4" id="whousId" id="about">
         <div class="whous d-flex justify-content-between flex-wrap gap-3 mt-5">
             <div class="owl-carousel owl-carousel-whous owl-theme owl-loaded">
                 <div class="owl-stage-outer">
@@ -108,8 +106,7 @@
     </div>
     <!-- end of science -->
     <!-- 3 Cards Section -->
-    <div class="container d-flex justify-content-center gap-4 flex-wrap my-5" data-aos="zoom-in-down"
-        data-aos-duration="1500" id="appsId">
+    <div class="container d-flex justify-content-center gap-4 flex-wrap my-5" id="appsId">
         <div class="card shadow cardsty" style="width: 18rem;">
             <div class="iiccon d-flex justify-content-center align-items-center"><i
                     class="fa-solid fa-car text-light fs-4"></i></div>
@@ -239,7 +236,7 @@
     <!-- Location map & form -->
     <div class="contact-container" id="contusId">
         <div>
-            <div class="container text-light py-5" data-aos="zoom-in" data-aos-duration="1500" id="contact">
+            <div class="container text-light py-5" id="contact">
                 <div>
                     <p>Contact</p>
                     <div class="line"></div>
@@ -277,7 +274,7 @@
                     <!-- 2 Cards @Contact us -->
                 </div>
                 <div class="col-12 col-md-6 shadow-lg p-3">
-                    <h2 class="text-light" data-aos="zoom-in" data-aos-duration="1500">Contact Us Via Email</h2>
+                    <h2 class="text-light">Contact Us Via Email</h2>
                     <div class="row">
                         <div class="mb-3 col-6">
                             <input type="text" class="form-control" id="exampleFormControlInputName"
@@ -342,12 +339,6 @@
     <!-- owl carousel -->
     <script src="./assets/js/owl.carousel.min.js"></script>
 
-    <!-- aos -->
-    <script src="./assets/js/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
     <!-- jquery logic -->
     <script>
         function sendEmail() {
@@ -372,16 +363,6 @@
             $('.counter').counterUp({
                 delay: 10,
                 time: 2000
-            });
-            $(".owl-carousel-panner").owlCarousel({
-                items: 1,
-                loop: true,
-                dots: false,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                animateIn: "fadeIn",
-                animateOut: "fadeOut",
-                rtl: true
             });
             $(".owl-carousel-whous").owlCarousel({
                 items: 1,
@@ -411,7 +392,6 @@
                 autoplayTimeout: 2000,
                 animateIn: "fadeIn",
                 animateOut: "fadeOut",
-                rtl: true
             });
         });
     </script>
